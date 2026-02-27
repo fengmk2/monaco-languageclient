@@ -60,7 +60,7 @@
     "report:versions:vite": "echo vite: && vp --version && echo vitest: && vp test --version",
     "report:versions:node": "echo npm: && npm --version && echo node: && node --version && echo eslint: && eslint --version",
     "report:versions:tools": "echo tsgo: && tsgo --version && echo eslint: && eslint --version && echo pnpm: && pnpm --version && echo yarn: && yarn --version",
-    "report:versions": "echo Reporting versions: && npm run report:versions:node && npm run report:versions:vite && npm run report:versions:tools",
+    "report:versions": "echo Reporting versions: && npm run report:versions:node && npm run report:versions:vite",
     "build": "npm run build --workspaces",
     "build:client": "npm run build --workspace packages/client",
     "build:vscode-ws-jsonrpc": "npm run build --workspace packages/vscode-ws-jsonrpc",
