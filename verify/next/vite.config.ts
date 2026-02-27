@@ -4,7 +4,7 @@
  * ------------------------------------------------------------------------------------------ */
 
 import * as path from 'node:path';
-import { defineConfig } from 'vite';
+import { defineConfig } from 'vite-plus';
 
 /// <reference lib="vite/config" />
 

@@ -3,7 +3,7 @@
  * Licensed under the MIT License. See LICENSE in the package root for license information.
  * ------------------------------------------------------------------------------------------ */
 
-import { beforeAll, describe, expect, test } from 'vitest';
+import { beforeAll, describe, expect, test } from 'vite-plus/test';
 
 import * as monaco from '@codingame/monaco-vscode-editor-api';
 import '@codingame/monaco-vscode-standalone-languages';

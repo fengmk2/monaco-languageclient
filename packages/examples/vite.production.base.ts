@@ -1,4 +1,4 @@
-import { UserConfig } from 'vite';
+import { UserConfig } from 'vite-plus';
 import vsixPlugin from '@codingame/monaco-vscode-rollup-vsix-plugin';
 import { viteStaticCopy } from 'vite-plugin-static-copy';
 import path from 'path';

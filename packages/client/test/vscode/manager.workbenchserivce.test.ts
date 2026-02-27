@@ -3,7 +3,7 @@
  * Licensed under the MIT License. See LICENSE in the package root for license information.
  * ------------------------------------------------------------------------------------------ */
 import { MonacoVscodeApiWrapper } from 'monaco-languageclient/vscodeApiWrapper';
-import { describe, expect, test } from 'vitest';
+import { describe, expect, test } from 'vite-plus/test';
 import { createDefaultMonacoVscodeApiConfig } from '../support/helper.js';
 
 describe('MonacoVscodeApiWrapper Tests: Different config', () => {

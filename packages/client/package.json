@@ -146,7 +146,6 @@
     "@codingame/monaco-vscode-standalone-json-language-features": "^26.0.1",
     "@codingame/monaco-vscode-standalone-typescript-language-features": "^26.0.1"
   },
-
   "scripts": {
     "clean": "shx rm -fr ./lib *.tsbuildinfo",
     "compile": "tsgo --build tsconfig.src.json",

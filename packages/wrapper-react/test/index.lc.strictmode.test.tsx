@@ -9,7 +9,7 @@ import { Deferred, delayExecution } from 'monaco-languageclient/common';
 import type { LanguageClientManager } from 'monaco-languageclient/lcwrapper';
 import type { MonacoVscodeApiConfig } from 'monaco-languageclient/vscodeApiWrapper';
 import React, { StrictMode } from 'react';
-import { describe, expect, test } from 'vitest';
+import { describe, expect, test } from 'vite-plus/test';
 import { cleanHtmlBody, createDefaultEditorAppConfig, createDefaultLanguageClientConfig, hundredMs } from './support/helper.js';
 
 describe.sequential('Test MonacoEditorReactComp StrictMode: Language Client ', () => {

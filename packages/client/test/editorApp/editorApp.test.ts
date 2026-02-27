@@ -10,7 +10,7 @@ import { type ILogger } from '@codingame/monaco-vscode-log-service-override';
 import { encodeStringOrUrlToDataUrl } from 'monaco-languageclient/common';
 import { EditorApp, type TextContents } from 'monaco-languageclient/editorApp';
 import { MonacoVscodeApiWrapper } from 'monaco-languageclient/vscodeApiWrapper';
-import { beforeAll, describe, expect, test, vi } from 'vitest';
+import { beforeAll, describe, expect, test, vi } from 'vite-plus/test';
 import { createDefaultMonacoVscodeApiConfig, createEditorAppConfig, createMonacoEditorDiv } from '../support/helper.js';
 
 describe('Test EditorApp', () => {

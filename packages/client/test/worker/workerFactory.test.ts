@@ -7,7 +7,7 @@ import { LogLevel } from '@codingame/monaco-vscode-api';
 import { ConsoleLogger } from '@codingame/monaco-vscode-log-service-override';
 import { getEnhancedMonacoEnvironment } from 'monaco-languageclient/vscodeApiWrapper';
 import { useWorkerFactory, Worker } from 'monaco-languageclient/workerFactory';
-import { describe, expect, test } from 'vitest';
+import { describe, expect, test } from 'vite-plus/test';
 
 describe('WorkerFactory Tests', () => {
 

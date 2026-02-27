@@ -1,7 +1,7 @@
 import angular from '@analogjs/vite-plugin-angular';
 import importMetaUrlPlugin from '@codingame/esbuild-import-meta-url-plugin';
 import path from 'path';
-import { defineConfig } from 'vite';
+import { defineConfig } from 'vite-plus';
 
 export default defineConfig(({ command }) => {
     console.log(`Running: ${command}`);

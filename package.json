@@ -21,8 +21,6 @@
     "@typescript-eslint/eslint-plugin": "~8.55.0",
     "@typescript-eslint/parser": "~8.55.0",
     "@typescript/native-preview": "~7.0.0-dev.20260210.1",
-    "@vitest/browser": "~4.0.18",
-    "@vitest/browser-playwright": "~4.0.18",
     "@vitest/coverage-v8": "~4.0.18",
     "editorconfig": "~3.0.1",
     "esbuild": "~0.27.3",
@@ -32,17 +30,18 @@
     "eslint-plugin-unused-imports": "~4.4.1",
     "globals": "~17.3.0",
     "minimatch": "~10.1.2",
-    "oxlint": "~1.46.0",
-    "vite": "~8.0.0-beta.13",
+    "vite": "npm:@voidzero-dev/vite-plus-core@latest",
     "shx": "~0.4.0",
     "tsx": "~4.21.0",
     "typescript": "~5.9.3",
-    "vitest": "~4.0.18"
+    "vitest": "npm:@voidzero-dev/vite-plus-test@latest",
+    "vite-plus": "latest"
   },
   "overrides": {
     "react": "~19.2.4",
     "react-dom": "~19.2.4",
-    "vite": "~8.0.0-beta.13"
+    "vite": "npm:@voidzero-dev/vite-plus-core@latest",
+    "vitest": "npm:@voidzero-dev/vite-plus-test@latest"
   },
   "scripts": {
     "clean": "npm run clean --workspaces",
@@ -51,13 +50,13 @@
     "watch": "tsgo --build tsconfig.build.json --watch --verbose",
     "watch:tsc": "tsc --build tsconfig.build.json --watch --verbose",
     "build:tsc": "tsc --build tsconfig.build.json --verbose",
-    "lint": "echo Running oxlint: && oxlint && echo Running eslint: && eslint",
+    "lint": "echo Running oxlint: && vp lint && echo Running eslint: && eslint",
     "production:build": "npm run production:build --workspace packages/examples",
     "production:preview:build": "npm run production:preview:build --workspace packages/examples",
     "production:preview": "npm run production:preview --workspace packages/examples",
-    "dev": "vite",
-    "dev:debug": "vite --debug --force",
-    "report:versions:vite": "echo vite: && vite --version && echo vitest: && vitest --version",
+    "dev": "vp dev",
+    "dev:debug": "vp dev --debug --force",
+    "report:versions:vite": "echo vite: && vp dev --version && echo vitest: && vp test --version",
     "report:versions:node": "echo npm: && npm --version && echo node: && node --version && echo eslint: && eslint --version",
     "report:versions:tools": "echo tsgo: && tsgo --version && echo eslint: && eslint --version && echo pnpm: && pnpm --version && echo yarn: && yarn --version",
     "report:versions": "echo Reporting versions: && npm run report:versions:node && npm run report:versions:vite && npm run report:versions:tools",
@@ -76,10 +75,10 @@
     "reset:chrome": "shx rm -fr ./.chrome",
     "reset:repo": "git clean -f -d -x --exclude=.chrome",
     "test": "npm run test:install && npm run test:direct",
-    "test:direct:watch": "vitest --config vitest.config.ts",
+    "test:direct:watch": "vp test --config vitest.config.ts",
     "test:watch": "npm run test:install && npm run test:direct:watch",
-    "test:direct": "vitest --config vitest.config.ts run",
-    "test:coverage": "vitest --config vitest.config.ts run --coverage",
+    "test:direct": "vp test --config vitest.config.ts run",
+    "test:coverage": "vp test --config vitest.config.ts run --coverage",
     "test:debug": "npm run test:playwright -- --inspect-brk=20222 --browser --no-file-parallelism",
     "test:install": "playwright install --with-deps chromium"
   },
@@ -89,5 +88,6 @@
     "packages/wrapper",
     "packages/wrapper-react",
     "packages/examples"
-  ]
+  ],
+  "packageManager": "npm@11.11.0"
 }
