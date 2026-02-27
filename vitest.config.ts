@@ -3,9 +3,9 @@
  * Licensed under the MIT License. See LICENSE in the package root for license information.
  * ------------------------------------------------------------------------------------------ */
 
-import { playwright } from '@vitest/browser-playwright'
-import { mergeConfig } from 'vite';
-import { defineConfig as defineVitestConfig } from 'vitest/config';
+import { playwright } from 'vite-plus/test/browser-playwright'
+import { mergeConfig } from 'vite-plus';
+import { defineConfig as defineVitestConfig } from 'vite-plus';
 import externalViteConfig from './vite.config.js';
 
 /// <reference lib="vitest/config" />

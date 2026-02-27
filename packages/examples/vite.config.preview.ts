@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite';
+import { defineConfig } from 'vite-plus';
 import { buildBaseProductionConfig } from './vite.production.base.js';
 
 export default defineConfig(({ command }) => {

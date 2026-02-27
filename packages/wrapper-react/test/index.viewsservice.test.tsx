@@ -8,7 +8,7 @@ import { MonacoEditorReactComp } from '@typefox/monaco-editor-react';
 import { Deferred, delayExecution } from 'monaco-languageclient/common';
 import { type MonacoVscodeApiConfig } from 'monaco-languageclient/vscodeApiWrapper';
 import React from 'react';
-import { describe, expect, test } from 'vitest';
+import { describe, expect, test } from 'vite-plus/test';
 import { cleanHtmlBody, createDefaultEditorAppConfig, hundredMs } from './support/helper.js';
 
 describe('Test MonacoEditorReactComp', () => {

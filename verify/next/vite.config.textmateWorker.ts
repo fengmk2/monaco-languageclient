@@ -5,7 +5,7 @@
 
 import path from 'node:path';
 import fs from 'node:fs';
-import { defineConfig } from 'vite';
+import { defineConfig } from 'vite-plus';
 import type { PluginContext } from 'rolldown';
 
 const config = defineConfig({

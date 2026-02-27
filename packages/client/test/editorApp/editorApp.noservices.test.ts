@@ -4,7 +4,7 @@
  * ------------------------------------------------------------------------------------------ */
 
 import { EditorApp } from 'monaco-languageclient/editorApp';
-import { describe, expect, test } from 'vitest';
+import { describe, expect, test } from 'vite-plus/test';
 import { createEditorAppConfig, createMonacoEditorDiv } from '../support/helper.js';
 
 describe('Test EditorApp', () => {

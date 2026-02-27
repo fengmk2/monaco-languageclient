@@ -162,8 +162,8 @@
     "extract:docker": "tsx ./resources/clangd/scripts/extractDockerFiles.ts",
     "production:clean": "shx rm -fr ./production",
     "production:copy:mini-coi": "mini-coi --service-worker production/mini-coi.js",
-    "production:build": "npm run production:clean && vite --config vite.config.deploy.ts build && npm run production:copy:mini-coi",
-    "production:preview:build": "npm run production:clean && vite --config vite.config.preview.ts build && npm run production:copy:mini-coi",
-    "production:preview": "vite --config vite.config.preview.ts preview -d"
+    "production:build": "npm run production:clean && vp dev --config vite.config.deploy.ts build && npm run production:copy:mini-coi",
+    "production:preview:build": "npm run production:clean && vp dev --config vite.config.preview.ts build && npm run production:copy:mini-coi",
+    "production:preview": "vp dev --config vite.config.preview.ts preview -d"
   }
 }

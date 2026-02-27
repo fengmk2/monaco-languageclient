@@ -5,7 +5,7 @@
 
 /* eslint-disable dot-notation */
 
-import { beforeAll, describe, expect, test } from 'vitest';
+import { beforeAll, describe, expect, test } from 'vite-plus/test';
 import { IConfigurationService, LogLevel, StandaloneServices } from '@codingame/monaco-vscode-api';
 import { getEnhancedMonacoEnvironment, MonacoVscodeApiWrapper } from 'monaco-languageclient/vscodeApiWrapper';
 import { createDefaultMonacoVscodeApiConfig, createMonacoEditorDiv } from '../support/helper.js';

@@ -4,7 +4,7 @@
  * ------------------------------------------------------------------------------------------ */
 
 import { EmptyFileSystemEndpoint } from 'monaco-languageclient/fs';
-import { describe, expect, test } from 'vitest';
+import { describe, expect, test } from 'vite-plus/test';
 
 describe('EmptyFileSystemEndpoint Tests', () => {
 
